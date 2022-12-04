@@ -13,3 +13,5 @@ spring:
   graphql:
     graphiql:
       enabled: true
+  liquibase:
+    change-log: classpath:db/changelog/start.xml
