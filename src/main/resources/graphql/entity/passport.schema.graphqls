@@ -1,0 +1,9 @@
+type Passport {
+    id: ID!
+    firstname: String!
+    surname: String!
+    lastname: String!
+    birthdayDate: String!
+    passportSerial: String!
+    expirationDate: String!
+}

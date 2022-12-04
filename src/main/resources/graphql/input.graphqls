@@ -1,0 +1,8 @@
+input PassportInput {
+    firstname: String!
+    surname: String!
+    lastname: String!
+    birthday: String!
+    passportSerialNumber: String!
+    expirationDate: String!
+}

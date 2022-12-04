@@ -15,7 +15,7 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "api_user")
-public class User implements Serializable {
+public class ApiUser implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -24,10 +24,6 @@ public class User implements Serializable {
 
     @Column(name = "public_uuid", unique = true)
     private UUID publicUuid;
-
-    @ManyToOne(cascade = CascadeType.MERGE)
-    @JoinColumn(name = "role_id")
-    private Role role;
 
     @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.PERSIST})
     @JoinColumn(name = "passport_id")

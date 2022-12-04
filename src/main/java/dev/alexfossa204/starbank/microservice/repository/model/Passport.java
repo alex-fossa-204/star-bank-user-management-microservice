@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Data
@@ -36,16 +36,16 @@ public class Passport implements Serializable {
     private String surname;
 
     @Column(name = "birthday_date")
-    private Date birthdayDate;
+    private LocalDateTime birthdayDate;
 
     @Column(name = "issue_date")
-    private Date issueDate;
+    private LocalDateTime issueDate;
 
     @Column(name = "expiration_date")
-    private Date expirationDate;
+    private LocalDateTime expirationDate;
 
     @Column(name = "passport_serial")
-    private String passportSerialNumber;
+    private String passportSerial;
 
     @Column(name = "is_us_resident")
     private Boolean isUsResident;

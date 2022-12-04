@@ -1,0 +1,6 @@
+type Query {
+    passportBySerialNumber(passportSerialNumber: String): Passport
+    passportsByLastName(lastname: String): [Passport]
+
+    apiUsersAll: [ApiUser]
+}

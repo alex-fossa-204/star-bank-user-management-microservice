@@ -1,0 +1,4 @@
+type ApiUser {
+    id: ID!
+    passport: Passport
+}
