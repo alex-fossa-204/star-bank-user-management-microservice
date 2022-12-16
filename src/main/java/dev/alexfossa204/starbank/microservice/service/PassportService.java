@@ -10,4 +10,5 @@ public interface PassportService {
 
     Passport findPassportBySerialNumber(String passportSerialNumber);
 
+    List<Passport> findAllPassports();
 }
