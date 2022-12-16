@@ -1,4 +1,4 @@
-package dev.alexfossa204.starbank.microservice.service;
+package dev.alexfossa204.starbank.microservice.unit.service;
 
 import dev.alexfossa204.starbank.microservice.repository.ApiUserRepository;
 import dev.alexfossa204.starbank.microservice.repository.model.ApiUser;
