@@ -5,12 +5,13 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @Repository
 public interface PassportRepository extends JpaRepository<Passport, UUID> {
 
-    Passport findPassportByPassportSerial(String passportSerial);
+    Optional<Passport> findPassportByPassportSerial(String passportSerial);
 
     List<Passport> findAllPassportsByLastname(String lastname);
 

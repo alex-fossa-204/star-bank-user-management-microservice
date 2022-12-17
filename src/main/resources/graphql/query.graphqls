@@ -3,5 +3,6 @@ type Query {
     passportsByLastName(lastname: String): [Passport]
     allPassports: [Passport]
 
+    apiUserByUuid(apiUserUuid: String): ApiUser
     apiUsersAll: [ApiUser]
 }
